@@ -25,7 +25,7 @@ commit_msg_file=$1
 commit_msg=$(cat "$commit_msg_file")
 
 # Regex pattern to match JIRA issue keys
-jira_pattern="^(PAMIT|CI|EPM)-[0-9]+"
+jira_pattern="^(PAMIT|CI|EPM|EIT)-[0-9]+"
 
 # Check if the commit message starts with a JIRA key
 if ! [[ "$commit_msg" =~ $jira_pattern ]]; then
